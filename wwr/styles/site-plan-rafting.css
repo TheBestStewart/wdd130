@@ -6,10 +6,10 @@ Fonts are separated by a & */
 
 :root {
   /* change the values below to your colors from your palette */
-  --primary-color: #3489C9;
+  --primary-color: #20547B;
   --secondary-color: #FCD116;
   --accent1-color: #1B1B1B;
-  --accent2-color: #82C9F0;
+  --accent2-color: #3489C9;
 
   /* change the values below to your chosen font(s) */
   --heading-font: "Amaranth";
