@@ -1,0 +1,147 @@
+#content {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+nav a {
+    text-align: center;
+    color: #FCD116;
+    text-decoration: none;
+    padding: 35px;
+}
+nav a:hover {
+    color: #FCD116;
+}
+#hero-msg h1{
+    text-align: center;
+}
+#hero-msg h2{
+    text-align: center;
+}
+#hero-img {
+    width: 100%;
+}
+.button-box {
+    text-align: center;
+}
+main section {
+    text-align: center;
+}
+main section img {
+    box-sizing: border-box;
+}
+#background {
+    height: 725px;
+    background-color: #20547B;
+}
+body {
+    background-color: #20547B;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #20547B;
+}
+nav a:hover {
+    background-color: #20547B;
+}
+.book {
+    background-color: #3489C9;
+    color: #FCD116;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.join {
+    background-color: #3489C9;
+    color: #FCD116;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+}
+.book:hover {
+    background-color: #FCD116;
+    color: #20547B;
+}
+.join:hover {
+    background-color: #FCD116;
+    color: #20547B;
+}
+.msg {
+    background-color: #20547B;
+    line-height: 1.5em;
+    padding: 35px;
+}
+.msg h2 {
+    color: #FCD116;
+}
+.msg p {
+    color: #FCD116;
+    font-size: 0.8em;
+    padding-bottom: 15px;
+}
+footer {
+    background-color: #20547B;
+    color: #FCD116;
+    padding: 25px 50px;
+    margin-top: 200px;
+}
+footer a {
+    color: #FCD116;
+    text-decoration: none;
+}
+footer a:hover {
+    color: #FCD116;
+}
+footer p {
+    font-size: 1.25em;
+}
+footer p a:hover {
+    text-decoration: underline;
+}
+footer .social img {
+    padding-top: 15px;
+}
+.home-title {
+    color: #FCD116;
+    font-size: 2em;
+    margin-top: 10px;
+}
+h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h2 {
+    color: #FCD116;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    margin-bottom: 2em;
+    font-size: 1em;
+}
+.logo {
+    width: 80px;
+    border-radius: 50%;
+}
+#logo-link {
+    padding-top: 5px;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+.rivers-card {
+    margin: 200px 0;
+}
+.camping-card {
+    margin: 200px 0;
+}
+.rapids-card {
+    margin: 200px 0;
+}
+.card-img {
+    border: 10px solid #FCD116;
+}
