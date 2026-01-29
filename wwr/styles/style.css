@@ -109,18 +109,18 @@ footer .social img {
 }
 .home-title {
     color: #FCD116;
-    font-size: 2em;
+    font-size: 3em;
     margin-top: 10px;
 }
 h1 {
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Courier New', Courier, monospace;
 }
 h2 {
     color: #FCD116;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin: 0;
     margin-bottom: 2em;
-    font-size: 1em;
+    font-size: 1.25em;
 }
 .logo {
     width: 80px;
