@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apostles Spotlights</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        body {
+            color: #E8ECED;
+            margin: 50px;
+            margin-top: 20px;
+        }
+        main {
+            background-image: url('images/christus.webp');
+            background-size: cover;
+            text-align: center;
+            grid-area: 1/2/2/3;
+            display: grid;
+            grid-template-rows: 1fr 2.25fr;
+            border: 8px solid black;
+            border-radius: 30px;
+            justify-items: center;
+        }
+        main img {
+            border: 7px solid #E8ECED;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .large-image {
+            width: 100px;
+            height: 100px;
+        }
+        .medium-image {
+            width: 85px;
+            height: 85px;
+        }
+        .small-image {
+            width: 75px;
+            height: 75px;
+        }
+        div.presidency {
+            grid-area: 1/1/2/3;
+            display: grid;
+            grid-template-columns: 1fr 1.25fr 1fr;
+            grid-template-rows: 3em 1fr;
+            gap: 15px;
+            justify-items: center;
+            align-items: flex-end;
+        }
+        div.presidency h1 {
+            grid-area: 1/1/2/4;
+        }
+        div.quorum {
+            grid-area: 2/1/3/3;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: 3em 75px 75px 75px;
+            gap: 25px;
+            margin-bottom: 15px;
+            justify-items: center;
+            align-items: flex-end;
+        }
+        div.quorum h2 {
+            grid-area: 1/1/2/5;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <div class="presidency">
+            <h1>First Presidency</h1>
+            <img class="medium-image"src="images/eyring.webp" alt="President Eyring">
+            <img class="large-image"src="images/oaks.webp" alt="President Oaks">
+            <img class="medium-image"src="images/christofferson.webp" alt="President Christofferson">
+        </div>
+        <div class="quorum">
+            <h2>Quorum of the Twelve Apostles</h2>
+            <img class="small-image" src="images/holland.webp" alt="President Holland">
+            <img class="small-image" src="images/uchtdorf.webp" alt="Elder Uchtdorf">
+            <img class="small-image" src="images/bednar.webp" alt="Elder Bednar">
+            <img class="small-image" src="images/cook.webp" alt="Elder Cook">
+            <img class="small-image" src="images/anderson.webp" alt="Elder Anderson">
+            <img class="small-image" src="images/rasband.webp" alt="Elder Rasband">
+            <img class="small-image" src="images/stevenson.webp" alt="Elder Stevenson">
+            <img class="small-image" src="images/renlund.webp" alt="Elder Renlund">
+            <img class="small-image" src="images/gong.webp" alt="Elder Gong">
+            <img class="small-image" src="images/soares.webp" alt="Elder Soares">
+            <img class="small-image" src="images/kearon.webp" alt="Elder Kearon">
+            <img class="small-image" src="images/causse.webp" alt="Elder Causse">
+        </div>
+    </main>
+</body>
+</html>
