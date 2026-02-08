@@ -15,6 +15,7 @@ nav a {
 }
 nav a:hover {
     color: #FCD116;
+    background-color: #20547B;
 }
 #hero {
     display: grid;
@@ -59,12 +60,9 @@ body {
     padding: 0;
 }
 header {
-    background-color: #3489C9;
+    background-color: #7CBDEE;
     display: grid;
     grid-template-columns: 150px auto;
-}
-nav a:hover {
-    background-color: #20547B;
 }
 .book {
     background-color: #3489C9;
