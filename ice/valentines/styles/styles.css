@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+#wrapper {
+    background-color: palevioletred;
+    text-align: center;
+}
+nav {
+    background-color: plum;
+}
+ul {
+    font-size: 1.5em;
+    font-style:italic;
+}
+li:hover {
+    background-color: pink;
+}
+main {
+    margin: 1em 5em;
+}
+h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-color: darksalmon;
+    margin: 0.5em;
+    padding: 0.25em;
+    border: 7px solid darkorchid;
+    border-radius: 10px;
+}
+h1:hover {
+    color:darkgreen;
+    background-color:cyan;
+    border-color: indigo;
+}
+img {
+    max-width: 100%;
+    border: 3px solid palegoldenrod;
+    border-radius: 50px;
+}
+img:hover {
+    border: 3px solid paleturquoise;
+}
+section {
+    margin: 2em 5em;
+    background-color: pink;
+    border: 2px solid purple;
+    border-radius: 10px;
+}
+section:hover {
+    color: violet;
+    background-color:black;
+    border-color: mediumvioletred;
+}
+h2 {
+    font-size: 1.75em;
+    margin: 0.25em;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+p {
+    margin: 0.5em;
+}
+footer {
+    background-color: plum;
+}
+footer:hover {
+    color: blue;
+    background-color: blanchedalmond;
+}
