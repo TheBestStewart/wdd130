@@ -4,42 +4,103 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stewart Smith | WDD 130 | About</title>
-    <link rel="stylesheet" href="styles/aboutme-style.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        main {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr auto;
+            padding: 1em;
+            gap: 1em;
+        }
+
+        section#blue {
+            background-color: skyblue;
+            grid-area: 1/5/2/7;
+            border: 3px solid #111;
+            border-radius: 10px;
+        }
+
+        section#red {
+            background-color: salmon;
+            grid-area: 1/3/2/5;
+            border: 3px solid #111;
+            border-radius: 10px;
+        }
+
+        section#green {
+            background-color: lightgreen;
+            grid-area: 1/1/2/3;
+            border: 3px solid #111;
+            border-radius: 10px;
+        }
+
+        section#about {
+            grid-area: 2/2/3/6;
+            display: grid;
+            grid-template: 2em 1fr/11em 1fr;
+            border: 3px solid #111;
+            padding: 1em;
+            border-radius: 10px;
+        }
+
+        section#about h1{
+            grid-area: 1/1/2/3;
+        }
+
+        section#about img{
+            grid-area: 2/1/3/2;
+            margin-top: 1.75em;
+            border: none;
+        }
+
+        section#about p{
+            grid-area: 2/2/3/3;
+            padding: 1em;
+            padding-bottom: 0;
+        }
+
+        footer {
+            height: 1em;
+        }
+    </style>
 </head>
 <body>
     <header>
+        <a id="logo" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Logo">
+        </a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="wwr/index.html">White Water Rafting Website</a>
-            <a href="ice/index.html">ICE</a>
+            <a href="ice/index.html">ICE Challenges</a>
             <a href="aboutme.html">About Me</a>
         </nav>
     </header>
 
     <main>
         <section id="blue">
-            <h2>Cool Content</h2>
-            <img src="https://picsum.photos/500" alt="Sample Image">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio atque unde repellendus a eligendi quam quod nostrum, eveniet animi recusandae molestiae, voluptas ut odit quidem, blanditiis necessitatibus praesentium vel in!</p>
+            <h2>Springville, Utah</h2>
+            <a href="https://www.springvilleutah.gov/"><img src="images/springville-library.jpg" alt="Springville Library"></a>
+            <p>This is my wonderful hometown. Linked is the official page of the city, where some features are listed.</p>
         </section>
 
         <section id="green">
-            <h2>Cool Content</h2>
-            <img src="https://picsum.photos/500" alt="Sample Image">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio atque unde repellendus a eligendi quam quod nostrum, eveniet animi recusandae molestiae, voluptas ut odit quidem, blanditiis necessitatibus praesentium vel in!</p>
+            <h2>The Church of Jesus Christ of Latter-day Saints</h2>
+            <a href="https://www.churchofjesuschrist.org/welcome/what-do-latter-day-saints-believe?lang=eng"><img src="images/christus.jpg" alt="Logo of the Church of Jesus Christ of Latter-day Saints"></a>
+            <p>This is the church I belong to. Linked is some of the basic beliefs we have.</p>
         </section>
 
         <section id="red">
-            <h2>Cool Content</h2>
-            <img src="https://picsum.photos/500" alt="Sample Image">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio atque unde repellendus a eligendi quam quod nostrum, eveniet animi recusandae molestiae, voluptas ut odit quidem, blanditiis necessitatibus praesentium vel in!</p>
+            <h2>Payson Utah Temple</h2>
+            <a href="https://churchofjesuschristtemples.org/payson-utah-temple/"><img src="images/payson-temple.jpg" alt="Payson Utah Temple"></a>
+            <p>This is my favorite temple of the Church of Jesus Christ of Latter-day Saints. Linked is some information about this house of the Lord.</p>
         </section>
 
         <section id="about">
         <h1>Stewart Smith</h1>
         <img src="images/profile.jpeg" alt="Image of me" width="500">
-        <p>Hello! I am a Cybersecurity major that loves video games way too much. My middle name is not on this website, you'll probably never find out what it is. I am unfortunately single. I hope to learn some basics of website design mostly so that if needed I can create websites.
-        I have been a member of the Church of Jesus Christ of Latter-day Saints my whole life (21 years), my favorite quote is from Elder Jeffrey R. Holland. It goes like this: “Don’t give up, boy. Don’t you quit. You keep walking. You keep trying. There is help and happiness ahead—a lot of it—30 years of it now, and still counting. You keep your chin up. It will be all right in the end. Trust God and believe in good things to come.”
+        <p>Hello! I am a Cybersecurity major that loves video games way too much. My middle name is not on this website, you'll probably never find out what it is. I am unfortunately single. I hope to learn some basics of website design mostly so that if needed I can create websites.<br>
+        I have been a member of the Church of Jesus Christ of Latter-day Saints my whole life (21 years), my favorite quote from our leadership is from Elder Jeffrey R. Holland. It goes like this: “Don’t give up, boy. Don’t you quit. You keep walking. You keep trying. There is help and happiness ahead—a lot of it—30 years of it now, and still counting. You keep your chin up. It will be all right in the end. Trust God and believe in good things to come.”<br>
         My favorite scripture is Alma 27:27. It reads: "And they were among the people of Nephi, and also numbered among the people who were of the church of God. And they were also distinguished for their zeal towards God, and also towards men; for they were perfectly honest and upright in all things; and they were firm in the faith of Christ, even unto the end."</p>
         </section>
     </main>

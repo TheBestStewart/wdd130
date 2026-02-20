@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Stewart Smith | WDD 130 | Home</title>
 </head>
 <body>
@@ -12,7 +13,6 @@
         </a>
         <nav>
             <a href="index.html">Home</a>
-            <a href="wwr/index.html">White Water Rafting Website</a>
             <a href="ice/index.html">ICE Challenges</a>
             <a href="aboutme.html">About Me</a>
         </nav>
@@ -20,19 +20,19 @@
     <main>
         <h1>Featured Projects</h1>
         <section id="one">
-            <h2>Lorem</h2>
-            <img src="https://picsum.photos/250" alt="sample image">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis optio tempore, voluptatibus laboriosam veniam tenetur officiis, a quidem obcaecati dicta praesentium! Aut, corrupti illo distinctio perferendis dolorum dolor praesentium similique.</p>
+            <h2>Apostle Spotlight</h2>
+            <a href="ice/apostle_spotlight/apostles.html"><img src="images/apostle_spotlight.png" alt="spotlight image"></a>
+            <p>This project shows off use of flexbox and grid to make a nice-looking collection. Additionally, clicking on each picture will take you to a list of that individual's conference talks.</p>
         </section>
         <section id="two">
-            <h2>Lorem</h2>
-            <img src="https://picsum.photos/250" alt="sample image">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis optio tempore, voluptatibus laboriosam veniam tenetur officiis, a quidem obcaecati dicta praesentium! Aut, corrupti illo distinctio perferendis dolorum dolor praesentium similique.</p>
+            <h2>White Water Rafting Website</h2>
+            <a href="wwr/index.html"><img src="images/rafting.png" alt="rafting image"></a>
+            <p>This project shows basic web design, and includes a site plan that demonstrates ability to adapt a wireframe into a website.</p>
         </section>
         <section id="three">
-            <h2>Lorem</h2>
-            <img src="https://picsum.photos/250" alt="sample image">
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis optio tempore, voluptatibus laboriosam veniam tenetur officiis, a quidem obcaecati dicta praesentium! Aut, corrupti illo distinctio perferendis dolorum dolor praesentium similique.</p>
+            <h2>Favorite Devotionals</h2>
+            <a href="ice/favorite_devo/favdevo.html"><img src="images/devo.png" alt="devotionals image"></a>
+            <p>This project includes table creation, as well as basic form design (though the form has no javascript, and doesn't work).</p>
         </section>
         <section id="four">
             <h2>Additional Featured Projects</h2>
@@ -43,33 +43,30 @@
                     <th>Skill Level</th>
                 </tr>
                 <tr>
-                    <td>Lorem ipsum dolor</td>
-                    <td>Lorem ipsum dolor</td>
-                    <td>Lorem ipsum dolor</td>
+                    <td><a href="ice/grid_flags/flags.html">Grid Flags</a></td>
+                    <td>CSS Grid</td>
+                    <td>Slightly above Low</td>
                 </tr>
                 <tr>
-                    <td>Lorem ipsum dolor</td>
-                    <td>Lorem ipsum dolor</td>
-                    <td>Lorem ipsum dolor</td>
+                    <td><a href="ice/prophet_cards/nelson.html">Prophet Card</a></td>
+                    <td>Basic CSS</td>
+                    <td>Low</td>
                 </tr>
                 <tr>
-                    <td>Lorem ipsum dolor</td>
-                    <td>Lorem ipsum dolor</td>
-                    <td>Lorem ipsum dolor</td>
+                    <td><a href="ice/valentines/index.html">Valentine's site</a></td>
+                    <td>CSS without changing HTML</td>
+                    <td>Low</td>
                 </tr>
             </table>
         </section>
     </main>
     <footer>
-        <h2>Contact Me</h2>
+        <h1>Contact Me</h1>
         <img src="images/profile.jpeg" alt="Picture of Me">
         <ul>
-            <li>Cool Thing</li>
-            <li>Cool Thing</li>
-            <li>Cool Thing</li>
-            <li>Cool Thing</li>
-            <li>Cool Thing</li>
-            <li>Cool Thing</li>
+            <li>801-372-4660</li>
+            <li>stewartsmithvd5@gmail.com</li>
+            <li>smi25033@byui.edu</li>
         </ul>
         <form>
           <label>
@@ -78,14 +75,12 @@
           <label>
             Email <input type="text" id="email">
           </label>
-          <label>
-            Phone Number <input type="text" id="phone">
-          </label>
-          <label>
+          <label id="message">
             Message <input type="text" id="message">
           </label>
           <button>Send Message</button>
         </form>
+        &copy; 2026 Stewart Smith
     </footer>
 </body>
 </html>
