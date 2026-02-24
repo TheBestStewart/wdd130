@@ -67,22 +67,6 @@ section img:hover {
 
 table {
     margin: 5px;
-    border: 5px solid #FEEBF7;
-    border-radius: 7px;
-    margin-top: 40px;
-}
-
-table:hover {
-    border-color: #1A1169;
-}
-
-table a {
-    color:#3D3929
-}
-
-table a:hover {
-    background-color: #1A1169;
-    color: #FEEBF7;
 }
 
 th {
@@ -92,6 +76,7 @@ th {
 
 td {
     border: 2px solid #3D3929;
+    font-size: 0.9em;
 }
 
 h2 {

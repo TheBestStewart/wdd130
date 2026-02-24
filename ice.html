@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Stewart Smith | WDD 130 | ICE</title>
+    <style>
+        p {
+            grid-area: 2/1/3/5;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <a id="logo" href="index.html">
+            <img class="logo" src="images/logo.png" alt="Logo">
+        </a>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="ice.html">ICE Challenges</a>
+            <a href="aboutme.html">About Me</a>
+        </nav>
+    </header>
+    <main>
+        <h1>ICE (In-Class Exercise) Projects</h1>
+        <p>Projects I completed in my WDD130 (Web Fundamentals) class.</p>
+        <section class="apostle">
+            <h2>Apostle Spotlight</h2>
+            <a href="ice/apostle_spotlight/apostles.html" target="_blank"><img src="images/apostle_spotlight.png" alt="project image"></a>
+            <p>For this project I used grid and flexbox to position the portraits. I additionally added links to each of the images to take you to the General Conference talks the individual has given.</p>
+        </section>
+        <section class="devotional">
+            <h2>Favorite Devotionals</h2>
+            <a href="ice/favorite_devo/favdevo.html" target="_blank"><img src="images/devo.png" alt="project image"></a>
+            <p>For this project I created a table of some of my favorite BYU-I devotionals and a form, though the form lacks python to make it function.</p>
+        </section>
+        <section class="flags">
+            <h2>CSS Grid Flags</h2>
+            <a href="ice/grid_flags/flags.html" target="_blank"><img src="images/flags.png" alt="project image"></a>
+            <p>For this project I used grid to position the elements in such a way that they formed the image of different country's flags.</p>
+        </section>
+        <section class="positioning">
+            <h2>CSS Positioning</h2>
+            <a href="ice/positioning/positioning.html" target="_blank"><img src="images/positioning.png" alt="project image"></a>
+            <p>For this project I used grid (and in one case float) to position elements in different ways. The links given are samples that were used as blueprints.</p>
+        </section>
+        <section class="cards">
+            <h2>Prophet Card</h2>
+            <a href="ice/prophet_cards/nelson.html" target="_blank"><img src="images/card.png" alt="project image"></a>
+            <p>For this project I used CSS to stylize a card. This was the first project we worked on so it is very basic.</p>
+        </section>
+        <section class="valentines">
+            <h2>Valentine's Site</h2>
+            <a href="ice/valentines/index.html" target="_blank"><img src="images/valentines.png" alt="project image"></a>
+            <p>For this project I used CSS to style a page that I wasn't allowed to change the html of. My least favorite project, but hover effects are pretty fun.</p>
+        </section>
+    </main>
+    <footer>
+        <h1>Contact Me</h1>
+        <img src="images/profile.jpeg" alt="Picture of Me">
+        <ul>
+            <li>801-372-4660</li>
+            <li>stewartsmithvd5@gmail.com</li>
+            <li>smi25033@byui.edu</li>
+        </ul>
+        <form>
+          <label>
+            Name <input type="text" id="name">
+          </label>
+          <label>
+            Email <input type="text" id="email">
+          </label>
+          <label id="message">
+            Message <input type="text" id="message">
+          </label>
+          <button>Send Message</button>
+        </form>
+        &copy; 2026 Stewart Smith
+    </footer>
+</body>
+</html>
