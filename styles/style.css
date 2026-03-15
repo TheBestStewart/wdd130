@@ -146,6 +146,15 @@ footer form label {
 
 button {
     grid-area: 3/1/4/3;
+    color: #3D3929;
+    background-color: #c5e8db;
+    border-color: #3D3929;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #96EDCA;
+    cursor: pointer;
 }
 
 #logo {
