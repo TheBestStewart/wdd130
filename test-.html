@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img {
+            max-width: 100%;
+        }
+        main {
+            display: grid;
+        }
+        #maps {
+            grid-area: 1/1/2/2;
+            opacity: 0;
+        }
+        #maps:hover {
+            opacity: 1;
+        }
+        #ochoa {
+            grid-area: 1/1/2/2;
+            width: 250px;
+        }
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <img src="https://iili.io/qwGao9j.jpg" id="ochoa">
+        <img src="https://iili.io/qw86D37.png" id="maps">
+        <button type="button" class="collapsible"><img src="https://iili.io/qwGao9j.jpg">Chick-Fil-A</button>
+        <div class="content">
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo quae earum distinctio! Rem omnis eos doloribus itaque illum odit quis in at dolores tempore, ratione exercitationem, tenetur molestias est id!</p>
+        </div>
+    </main>
+    
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+            
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        } 
+    </script>
+</body>
+</html>
