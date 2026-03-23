@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food</title>
+    <style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+        background-color: #567568;
+        color: white;
+    }
+    h1 {
+        font-size: 1em;
+        margin: 10px;
+    }
+    p {
+        padding-bottom: 10px;
+        font-size: 0.8em;
+    }
+    img {
+        max-width: 100%;
+    }
+    .element {
+        max-width: 250px;
+        display: grid;
+        text-align: center;
+        padding-top: 10px;
+    }
+    .image {
+        grid-area: 1/1/2/2;
+    }
+    .maps {
+        grid-area: 1/1/2/2;
+        opacity: 0;
+    }
+    .maps:hover {
+        opacity: 0.7;
+    }
+    .collapsible {
+        background-color: #7F9172;
+        cursor: pointer;
+        padding: 18px;
+        width: 100%;
+        border: none;
+        text-align: left;
+        outline: none;
+        font-size: 15px;
+    }
+    .collapsible:hover {
+        background-color: #B49594;
+    }
+    .active {
+        background-color: #C9B1BD;
+    }
+    .content {
+        padding: 0 18px;
+        display: none;
+        overflow: hidden;
+    }
+    #byui-meal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 5px;
+    }
+    #byui-dessert {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+    #rex-meal {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 5px;
+    }
+    #rex-dessert {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 5px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Located in the BYU-I Crossroads - Manwaring Student Center</h1>
+    <button type="button" class="collapsible">Meal Options</button>
+    <div class="content">
+        <div id="byui-meal">
+        <section class="element">
+            <img src="https://iili.io/qNTe9Rt.jpg" class="image">
+            <a href="https://maps.app.goo.gl/4hxXKmaL6us3AyHf7" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Chick-Fil-A</h1>
+            <p>Breakfast: 8:30 AM - 10:30 AM Mon - Fri<br>
+                $4.79-$6.15 per meal<br><br>
+                Lunch: 10:30 am – 7:00 pm Mon - Fri<br>
+                11:00 am - 2:00 pm Saturday<br>
+                $11.49-$12.79 per meal<br><br>
+                Chicken, fries, & shakes.</p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTO6R1.jpg" class="image">
+            <a href="https://maps.app.goo.gl/y1FuFzcaCbqaNuyJ8" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Caliente</h1>
+            <p>11:00 am – 6:00 pm Mon - Fri<br>
+                No more than $10.00<br><br>
+                Mexican burritos, salads, & quesadillas</p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTerBf.jpg" class="image">
+            <a href="https://maps.app.goo.gl/SNGzeHCF79VSLytm9" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Teton Grill</h1>
+            <p>11:00am–6:00pm Mon - Fri<br>
+                No more than $10.00<br><br>
+                Burgers & fries.</p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTekmX.jpg" class="image">
+            <a href="https://maps.app.goo.gl/UfS4KacoCYR1ANpbA" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Stacks & Wraps</h1>
+            <p>11:00 am – 2:00 pm Mon - Fri<br>
+                Large portions: $13.95<br><br>
+                Deli sandwiches.</p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTOblp.jpg" class="image">
+            <a href="https://maps.app.goo.gl/gBG8AqgUsXt16jWp9" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Campagna</h1>
+            <p>11:00 am – 2:00 pm Mon - Fri<br><br>
+                Italian artisan sandwiches: $7.50</p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTOyJI.jpg" class="image">
+            <a href="https://maps.app.goo.gl/tqtNMLu7PwC5Z81W9" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Chef's Point</h1>
+            <p>11:00 am – 6:00 pm Mon - Fri<br>
+                No more than $10.00<br><br>
+                Homestyle comfort food</p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTeFsf.jpg" class="image">
+            <a href="https://maps.app.goo.gl/5y8EXa5WCBnDJeDs7" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Fire & Slice</h1>
+            <p>10:00 am – 2:00 pm Mon - Fri<br>
+                Single Slice $3.49, 10 inch $10.00<br><br>
+                Self-serve pizza, available while they last.</p>
+        </section>
+        </div>
+    </div>
+    <button type="button" class="collapsible">Dessert Options</button>
+    <div class="content">
+        <div id="byui-dessert">
+        <section class="element">
+            <img src="https://iili.io/qNTe0e1.jpg" class="image">
+            <a href="https://maps.app.goo.gl/eWxCd2etMMGxUmQLA" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Pastry Kitchen</h1>
+            <p>8:30 am – 2:00 pm Mon - Fri<br><br>
+                Self-serve pastries & desserts, available while they last.</p>
+            <a href="https://www.byui.edu/food-services/food-venues/pastry-kitchen" target="_blank"><p>Pastry Kitchen Menu</p></a>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTeeet.jpg" class="image">
+            <a href="https://maps.app.goo.gl/hecKAgM5PzxM77hL7" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>The Backroads Soda Stop</h1>
+            <p>11:00 am – 9:00 pm Mon - Fri<br>
+                Drinks: $2.50-$4.00<br>
+                Food: No more than $7.50<br><br>
+                Crepes, smoothies, soda, pizza, bagels, and more.</p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTeuWb.jpg" class="image">
+            <a href="https://maps.app.goo.gl/UPDj8E9XuSGhyc446" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>La Creperie</h1>
+            <p>9:00 am – 12:00 pm Mon - Fri<br>
+                No more than $10.00<br><br>
+                Made to order crepes</p>
+            <a href="https://www.byui.edu/food-services/la-creperie" target="_blank"><p>La Creperie Menu</p></a>
+        </section>
+        </div>
+    </div>
+    <h1>Local to Rexburg - Affordable Restaurants</h1>
+    <button type="button" class="collapsible">Meal Options</button>
+    <div class="content">
+        <div id="rex-meal">
+        <section class="element">
+            <img src="https://iili.io/qNTeHOX.jpg" class="image">
+            <a href="https://maps.app.goo.gl/oHj4sFsBvh9Ebkpu6" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Da Pineapple Grill</h1>
+            <p>At Da Pineapple Grill, you can indulge in a diverse menu that blends the best of Hawaiian and Asian cuisines, perfect for satisfying your cravings without breaking the bank.
+                With an emphasis on fresh ingredients and bold flavors, this spot is a hit among students looking for affordable yet delicious meal options.
+                Whether you're in the mood for a hearty poke bowl or a plate of savory teriyaki chicken, Da Pineapple Grill has something to delight every palate.
+                Plus, their generous portion sizes ensure you'll leave both your stomach and wallet happy.<br><br>
+                <b>Price: $10-$15</b></p>
+            <a href="https://pineapplegrill.com/" target="_blank"><p>Da Pineapple Grill Menu</p></a>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTexe9.jpg" class="image">
+            <a href="https://maps.app.goo.gl/eiQhTaDb3yCZ8ZDF9" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Millhollow Frozen Yogurt & Deli</h1>
+            <p>Millhollow Frozen Yogurt & Deli is an excellent choice for college students on a budget who crave variety and quality.
+                This cozy spot offers an array of delicious sandwiches and comforting soups, perfect for a hearty meal between classes.
+                Don't forget to treat yourself to their renowned frozen yogurt, available in multiple flavors and toppings, all without putting a dent in your wallet.
+                It’s the perfect blend of taste and affordability in a friendly, laid-back atmosphere.<br><br>
+                <b>Price:<br>
+                Ice cream: $5-$7 (Good size portion)<br>
+                Sandwiches and Meals: $10-$15</b></p>
+            <a href="https://www.millhollowrestaurant.com/" target="_blank"><p>Millhollow Menu</p></a>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTecdB.jpg" class="image">
+            <a href="https://maps.app.goo.gl/H3iWnRFVRHB44mPj6" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Original Thai</h1>
+            <p>When you're craving a break from the usual fare, Original Thai steps in with a vibrant array of Thai dishes that satisfy both your palate and your wallet.
+                The menu boasts an impressive variety of curry, noodle, and rice dishes, each bursting with authentic flavors and fresh ingredients.
+                Plus, with their budget-friendly prices, you can explore new culinary experiences without worrying about breaking the bank.
+                Whether you're a fan of the spicy Pad Thai or the subtler Green Curry, there's something deliciously different for every adventurous eater.<br><br>
+                <b>Price: $15-$18 (Although more expensive, the food portions are well worth the price!)</b></p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTe1mF.jpg" class="image">
+            <a href="https://maps.app.goo.gl/SjkR8PWziZSUgSxd7" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Pizza Pie Cafe</h1>
+            <p>Pizza Pie Cafe in Rexburg is a beloved spot among college students, thanks to its budget-friendly buffet that won't break the bank.
+                Though it's a smaller chain with only a few locations, it maintains a cozy, home-town atmosphere.
+                Here, you can indulge in an unlimited selection of pizzas, pastas, and salads, making it the perfect place for a filling meal without spending a fortune.
+                Whether you're craving a classic pepperoni pizza, a hearty bowl of Alfredo pasta, or a fresh and crisp salad, Pizza Pie Cafe has got you covered.
+                It's an ideal spot for study groups, casual hangouts, or just treating yourself after a long day of classes.<br><br>
+                <b>Price: $10 for full meal</b></p>
+            <a href="https://pizzapiecafe.co/menu/" target="_blank"><p>Pizza Pie Cafe Menu</p></a>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTO4HP.jpg" class="image">
+            <a href="https://maps.app.goo.gl/wybQBk7uujRoT6uK8" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Casa De Ochoa</h1>
+            <p>Casa De Ochoa stands out in Rexburg for its authentic Mexican cuisine, bringing the vibrant flavors of Mexico right to your plate without breaking the bank.
+                Students love the combination of generous portion sizes and affordable prices, making it an ideal spot for a satisfying meal after a busy day of classes.
+                Whether you're craving tacos, burritos, or enchiladas, Casa De Ochoa offers an extensive menu that promises a delicious dining experience.
+                Don't miss out on their homemade salsas and fresh guacamole, which add the perfect touch to any dish!<br><br>
+                <b>Price: $10-$20 for Lunch and Dinner</b></p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTe6rl.jpg" class="image">
+            <a href="https://maps.app.goo.gl/oidXqwLLnefBUZPe9" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>The Hickory</h1>
+            <p>The Hickory in Rexburg is well-known for its mouth-watering BBQ dishes and American comfort food, perfect for when you're craving a hearty meal without breaking the bank.
+                From tender ribs and juicy pulled pork to classic mac and cheese, this spot delivers rich flavors that won't empty your wallet.
+                It's a popular choice for students looking to enjoy a satisfying meal after a long day of classes or for a laid-back weekend treat.
+                The casual atmosphere and generous portions make it an excellent place to relax and indulge.<br><br>
+                <b>Price: Select few sandwiches for $12-$20<br>
+                Although more expensive, it makes up for it in the amount of food you get.</b></p>
+            <a href="https://www.thehickorybbq.com/menus/" target="_blank"><p>The Hickory Menu</p></a>
+        </section>
+        </div>
+    </div>
+    <button type="button" class="collapsible">Dessert Options</button>
+    <div class="content">
+        <div id="rex-dessert">
+        <section class="element">
+            <img src="https://iili.io/qNTeAsj.jpg" class="image">
+            <a href="https://maps.app.goo.gl/DVbYZPGmLyLxEKDB8" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Mrs. Powell's Bakery</h1>
+            <p>$10–$20 · Bakery<br>
+                19 E Main St<br><br>
+                "Good price and also got some day old cinnamon rolls to take home!"</p>
+        </section>
+        <section class="element">
+            <img src="https://iili.io/qNTeULG.jpg" class="image">
+            <a href="https://maps.app.goo.gl/9oLPqfER1EKfxMzg8" target="_blank" class="maps"><img src="https://iili.io/qUdgvpe.png"></a>
+            <h1>Runnin 4 Sweets</h1>
+            <p>Candy store<br>
+                58 E Main St<br><br>
+                "They have a HUGE selections of drinks, and a good selection of candies."</p>
+        </section>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+            
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        } 
+    </script>
+</body>
+</html>
