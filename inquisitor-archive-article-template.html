@@ -3,10 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Article Title -->
     <title>Article Template</title>
+    <link rel="stylesheet" href="indexstyle.css">
+    <style>
+        .collapsible {
+            background-color: #eee;
+            color: #444;
+            cursor: pointer;
+            padding: 18px;
+            width: 400px;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 15px;
+        }
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #f1f1f1;
+        }
+        #leftarrow {
+            position: fixed;
+            left: 0;
+            font-size: 4em;
+            padding: 5px;
+            opacity: 0.5;
+        }
+        #rightarrow {
+            position: fixed;
+            right: 0;
+            font-size: 4em;
+            padding: 5px;
+            opacity: 0.5;
+        }
+        footer {
+            position: fixed;
+            bottom: 0;
+            height: 50px;
+            width: 100%;
+            background-color: beige;
+            text-align: center;
+        }
+        main {
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-bottom: 100px;
+        }
+    </style>
 </head>
 <body>
+    <header>
+    <nav>
+        <h1>The Sharn Inquisitor Archive</h1>
+        <div class = buttondiv>
+            <button>|||</button>
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="03-01-26-gugalanna-games.html">Most Recent Article</a>
+            </div>
+        </div>
+    </nav>
+    </header>
     <main>
+    <a href=""><p id="leftarrow"><</p></a>
+    <a href=""><p id="rightarrow">></p></a>
     <!-- Heading -->
     <h2>Lorem Ipsum Dolor!</h2>
     <!-- Author Information-->
@@ -21,7 +87,25 @@
     <!-- Image -->
     <img class="article-photo" src="#" alt="Description of Photo">
     <!-- Clipping -->
-    <img class="newspaper-clipping" src="#" alt="Newspaper Clipping">
+    <br>
+    <button type="button" class="collapsible">Newspaper Clipping</button>
+    <div class="content"><img class="newspaper-clipping" src="#" alt="Newspaper Clipping"></div>
     </main>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+            
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        } 
+    </script>
 </body>
 </html>
